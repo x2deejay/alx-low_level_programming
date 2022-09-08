@@ -6,7 +6,11 @@
  *
  * Return: Always o (Succrss)
  */
-char puts(char output_string)
+int puts(char str)
+int main()
 {
-    output_string="Programming is like building a multilingual puzzle";
+    char output_words="Programming is like building a multilingual puzzle"
+    puts(output_words);
+    return (0);
+
 }
