@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
- * puts - This a function that prints 'Programming is line building a multiligual puzzle'
+ * main - outputs a string
  *
- * @output_string: Programming is like building a multilingual puzzle
- *
- * Return: 0
+ * Descriptinong:Prints programming is like building a multilingual puzzle
+ * Return:0
  */
 int main(void)
 {
-    puts("\"Programming is like building a multilingual puzzle");
-    return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
