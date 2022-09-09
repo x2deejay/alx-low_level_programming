@@ -9,6 +9,7 @@
 int main(void)
 {
 	char n;
+
 	n = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	putchar (n);
 	return (0);
