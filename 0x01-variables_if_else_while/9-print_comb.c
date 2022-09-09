@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - main entry point
+ * main - Main entry point
  *
- * Decription: Using the main function 
+ * Description: Using the main function
  * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
  * Return: 0
  */
