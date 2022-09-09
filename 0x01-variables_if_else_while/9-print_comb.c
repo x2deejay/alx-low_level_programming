@@ -4,7 +4,7 @@
  * main - main entry point
  *
  * Decription: prints all possible combinations
- * for a single-digit number
+ * for a single-digit number 0, 1, 2, 3, 4, 5, 6, 7, 8, 9$
  *@c: This is a initializer
  * Return;0
  */
