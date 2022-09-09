@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s main.c > main.s
+gcc -s CFILE=main.c > main.s
