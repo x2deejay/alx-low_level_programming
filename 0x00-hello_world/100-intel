@@ -1,14 +1,2 @@
-#include <stdio.h>
-
-/**
-*main - assembles and outputs
-*
-*Decription: generates the assembly code (Intel syntax) 
-*of a C code and save it in an output file.
-*Return: 0
-*/
-int main(void)
-{
-gcc -S -masm=intel -Og -fverbose-asm main.s; 
-return (0);
-}
+#!/bin/bash
+gcc -s $CFILE > main.s
