@@ -3,7 +3,9 @@
 /**
  * main - main entry point
  *
- * Decription: prints numbers in ascending order
+ * Decription: prints all possible combinations
+ * for a single-digit number
+ *@c: This is a initializer
  * Return;0
  */
 
