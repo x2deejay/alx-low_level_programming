@@ -10,7 +10,10 @@ int main(void)
 {
 	char n;
 
-	n = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
-	putchar (n);
+	for (n = 'a' ; n <= 'z' ; n++)
+	{
+		putchar (n);
+	}
+	putchar('\n');
 	return (0);
 }
