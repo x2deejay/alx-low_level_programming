@@ -2,8 +2,9 @@
 /**
  *main - main entry point
 Description: This program runs through the entry point
-to output all possible combinations of two two-digit numbers 
-range 0-99
+to output all possible combinations of two two-digit numbers
+with output 00 01, 00 02, 00 03, 00 04, 00 05, 00 06, 00 07
+00 08, 00 09, 00 10, 00 11, [...]
 Return: 0
 
  */
@@ -29,7 +30,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-	
 	putchar('\n');
 	return (0);
 }
