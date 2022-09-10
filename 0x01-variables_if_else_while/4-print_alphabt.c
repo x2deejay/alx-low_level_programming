@@ -3,7 +3,7 @@
 /**
  * main - main entry point
  *
- * Description: outputs upper case
+ * Description:This program should output abcdfghijklmnoprstuvwxyz
  * Return: 0
  */
 
