@@ -3,10 +3,10 @@
 #include <time.h>
 
 /**
- * main - Mian entry point
+ * main - main entry point
  *
- * Description: Assign and print random number
- * @n: random number
+ * Description: Using the main function this program
+ * prints 'programming is positvie, zero or negative
  * Return: 0
  */
 int main(void)
