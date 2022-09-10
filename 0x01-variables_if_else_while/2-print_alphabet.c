@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include <stdio>
+
 /**
- * main - Mian entry point
+ * main - Print if the number is positive, zero or negative
  *
- * Description: This program prints the alphabet 
- * abcdefghijklmnopqrstuvwxyz in lower case
- * @n: lower case input
+ * Description: Using the main function
+ * this program prints 'programming is positive, zero or negative
  * Return: 0
  */
+
 int main(void)
 {
 	char n;
