@@ -2,7 +2,8 @@
 /**
  * main - Mian entry point
  *
- * Description: Pints out all lower case
+ * Description: This program prints the alphabet 
+ * abcdefghijklmnopqrstuvwxyz in lower case
  * @n: lower case input
  * Return: 0
  */
