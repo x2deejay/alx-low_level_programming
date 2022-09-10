@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print if the number is positive, zero or negative
  *
- * Description: Prints a postive, negativ
- * or zero number
- * @n: Local variable input
+ * Description:Using the main function this
+ * program  prints 'programming is positve, zero or negative
  * Return: 0
  */
+
 int main(void)
 {
 	int n;
@@ -24,7 +24,7 @@ int main(void)
 	{
 		printf("%i is zero\n", n);
 	}
-	else
+	else if (n < 0)
 	{
 		printf("%i is negative\n", n);
 	}
