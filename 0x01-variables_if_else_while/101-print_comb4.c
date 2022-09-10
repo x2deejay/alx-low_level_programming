@@ -7,11 +7,10 @@
  * Return: 0
  */
 
-void printTwoCombinations(int a, int b, int c)
+void printTwoCombinations(int a=0, int b=1, int c=2)
 {
 	putchar(a+'0'); putchar(b+'0'); putchar(c+'0'); putchar('\n');
-	putchar(a+'0'); putchar(c+'0'); putchar(b+'0'); putchar('\n');
-}
+	putchar(a+'0'); putchar(c+'0'); putchar(b+'0'); putchar('\n');}
 int main(void)
 { 
 	int i, j, last;
