@@ -7,26 +7,19 @@
  *Return: void
  */
 
-void print_alphabet(void);
-
 int main(void)
 {
-	int i;
-
-	i = print_alphabet(void);
-	_putchar(i)
+	print_alphabet();
 	return (0);
 }
 
 void print_alphabet(void)
 {
-	int i;
+	char i;
 
-	i = 'a';
-	while (i <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putcar(i);
-		i++
+		_putchar(i);
 	}
-	return
+	_putchar('\n');
 }
