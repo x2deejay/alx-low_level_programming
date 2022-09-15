@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * Description - This function checkes if an input is a digit
+ * _isdigit - This function checkes if an input is a digit
+ * @C: Input parameter
  * Return: 0
  */
 
