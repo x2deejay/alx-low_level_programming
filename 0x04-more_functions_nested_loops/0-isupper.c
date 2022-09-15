@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * Description - This fuctions returns 1 is if upper and 0 if lower
+ * _isupper - fuctions returns 1 is if upper and 0 if lower
+ * @c: Function input
  * Return: 0
  */
 
