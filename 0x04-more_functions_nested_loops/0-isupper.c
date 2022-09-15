@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Description - This fuctions checks for upper case
+ * Description - This fuctions returns 1 is if upper and 0 if lower
  * Return: 0
  */
 
