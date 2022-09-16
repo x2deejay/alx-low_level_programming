@@ -11,7 +11,7 @@ int main(void)
 	long number;
 	int inc;
 
-	number = 1231952;
+	number = 612852475143;
 	while (inc++ < number / 2)
 	{
 		if (number % inc == 0)
