@@ -19,13 +19,14 @@ int main(void)
 			number /= 2;
 			continue;
 		}
-		for (inc = 3; inc < nmber / 2; inc += 2)
+		for (inc = 3; inc < number / 2; inc += 2)
 		{
 			if (number % inc == 0)
 			{
 				number /= inc;
 			}
 		}
+		printf("%u\n", inc);
 	}
 	return (0);
 }
