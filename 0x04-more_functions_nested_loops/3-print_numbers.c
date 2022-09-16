@@ -5,20 +5,14 @@
  * Return: 0
  */
 
-int main(void)
-{
-	print_numbers();
-	return (0);
-}
-
 void print_numbers(void)
 {
 	int i;
 
-	while (i <= 9)
+	for (i = 48; i < 58; i++)
 	{
 		_putchar(i);
-		_putchar('\n');
 		i++;
 	}
+	_putchar(10);
 }
