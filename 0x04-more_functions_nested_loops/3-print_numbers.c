@@ -5,13 +5,20 @@
  * Return: 0
  */
 
+int main(void)
+{
+	print_numbers();
+	return (0);
+}
+
 void print_numbers(void)
 {
 	int i;
 
-	for (i = 0; i <= 9; i++)
+	while (i <= 9)
 	{
 		_putchar(i);
 		_putchar('\n');
+		i++;
 	}
 }
