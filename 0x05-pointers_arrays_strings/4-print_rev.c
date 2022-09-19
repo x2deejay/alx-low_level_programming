@@ -10,16 +10,20 @@ void print_rev(char *str)
 {
 	int j;
 	int i;
+	int k;
 
 	j = 0;
-	while (j != '\0')
+	while (str[j] != '\0')
 	{
 		j++;
 	}
 
 	i = 0;
-	while (i <= j)
+	k = j;
+	while (i <= k)
 	{
-			
-
-
+		_putchar(str[k]);
+		k--;
+	}
+	_putchar('\n');
+}
