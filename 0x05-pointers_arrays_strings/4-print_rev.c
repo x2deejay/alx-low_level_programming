@@ -33,9 +33,13 @@ void print_rev(char *str)
 	}
 	j = count;
 	middle = j / 2;
-	for (i = 1; j >= i; i--)
+	for (i = 0; i < middle; i++)
 	{
-		printf("%c", str[j - i]);
+		temp = str[i];
+		str[i] = str[j - i];
+		str[j - 1] = temp;
 	}
 	printf("\n");
+
+
 }
