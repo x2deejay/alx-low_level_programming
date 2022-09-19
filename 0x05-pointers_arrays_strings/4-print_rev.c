@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * print_rev - prints string in reverse
@@ -6,24 +6,36 @@
  * Return: void
  */
 
+void print_rev(char *str);
+
+int main(void)
+{
+	char *str;
+
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	print_rev(str);
+	return (0);
+}
+
+
 void print_rev(char *str)
 {
+	int count;
 	int j;
 	int i;
-	int k;
+	char temp;
+	int middle;
 
-	j = 0;
-	while (str[j] != '\0')
+	count = 0;
+	while (str[count] != '\0')
 	{
-		j++;
+		count++;
 	}
-
-	i = 0;
-	k = j;
-	while (i <= k)
+	j = count;
+	middle = j / 2;
+	for (i = 1; j >= i; i--)
 	{
-		_putchar(str[k]);
-		k--;
+		printf("%c", str[j - i]);
 	}
-	_putchar('\n');
+	printf("\n");
 }
