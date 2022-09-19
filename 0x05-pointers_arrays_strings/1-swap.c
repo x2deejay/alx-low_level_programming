@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - This function swaps two locations of an input pointer parameter
@@ -10,12 +10,10 @@
 void swap_int(int *a, int *b)
 {
 	int temp;
-	*a = b;
-	*b = a;
 
 	temp = b;
 	b = a;
 	a = temp;
-	_putchar(a);
-	_putchar(b);
+	printf("%ls", a);
+	printf("%ls", b);
 }
