@@ -1,10 +1,21 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * puts_half - print half of characters
  * @str: Input parameter
  * Return: void
  */
+
+void puts_half(char *str);
+
+int main(void)
+{
+	char *str;
+
+	str = "0123456789";
+	puts_half(str);
+	return (0);
+}
 
 void puts_half(char *str)
 {
@@ -19,8 +30,8 @@ void puts_half(char *str)
 	j = i / 2;
 	while (i <= j)
 	{
-		_putchar(str[j]);
+		printf("%c", str[j]);
 		j++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
