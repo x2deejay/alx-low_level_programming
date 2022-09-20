@@ -23,5 +23,5 @@ void print_array(int *a, int n)
 			printf("%d", a[inc]);
 		}
 	}
-	_purchar(10);
+	_putchar(10);
 }
