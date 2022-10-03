@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * _strchr - finds character in a string
+ * @s: array of character paarameter
+ * @c: character to find
+ * Return: 0
+ */
+
 char *_strchr(char *s, char c)
 {
 	int i;
@@ -18,4 +25,4 @@ char *_strchr(char *s, char c)
 		return (s + i);
 	}
 	return (0);
-}			
+}
