@@ -9,6 +9,6 @@
 
 int main(int argc, char *argv[])
 {
-	_putchar(*argv[argc - 1]);
+	_putchar(argv[0]);
 	return (0);
 }
