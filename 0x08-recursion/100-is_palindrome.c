@@ -2,6 +2,15 @@
 #include "main.h"
 #include <string.h>
 
+/**
+ * is_palindrome_rec - checks palindrome with two additonal parameters
+ * @l: first character parameter
+ * @r: last character parameter
+ * @s: array input parameter
+ * Return: 1 if palindrome and 0 is not palindrome
+ *
+ */
+
 int is_palindrome_rec(char *s, int l, int r)
 {
 
@@ -19,6 +28,12 @@ int is_palindrome_rec(char *s, int l, int r)
 	}
 	return (0);
 }
+
+/**
+ * is_palindrome - checkes if string is palindrome
+ * @s: array to check
+ * Return: return 1 if palindrome and 0 if not
+ */
 
 int is_palindrome(char *s)
 {
