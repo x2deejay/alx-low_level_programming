@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 int is_palindrome_rec(char *s, int l, int r)
 {
@@ -21,13 +22,7 @@ int is_palindrome_rec(char *s, int l, int r)
 
 int is_palindrome(char *s)
 {
-	int i = 0;
-
-	while (*(s + i) != '\0')
-	{
-		i++;
-	}
-	if (is_palindrome_rec(s, 0, i - 1))
+	if (is_palindrome_rec(s, 0, strlen(s) - 1))
 	{
 		return (1);
 	}
