@@ -10,14 +10,15 @@
 
 int _strlen(char *s)
 {
-	int i;
+	int len;
 
-	i = 0;
-	while (s[i] != '\0')
+	len = 0;
+	while (*s != '\0')
 	{
-		i++;
+		len = len + 1;
+		s = s + 1;
 	}
-	return (i);
+	return (len);
 }
 
 /**
@@ -30,17 +31,30 @@ int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, s1_len, s2_len;
+	int s1_len, s2_len, total_len;
+	char *saved, *ptr;
 
 	s1_len = _strlen(s1);
 	s2_len = _strlen(s2);
-	printf("s1_len = %d and s2_len = %d\n", s1_len, s2_len);
-
-	i = 0;
-	while (s2[i])
+	total_len = s1_len + s2_len;
+	ptr = malloc(sizeof(char) * (total_len + 1));
+	if (ptr == NULL)
 	{
-		s1[s1_len] = s2[i];
-		i++;
+		return (NULL);
 	}
-	return (s1);
+	saved = ptr;
+	while (*s1 != '\0')
+	{
+		*ptr = *s1;
+		ptr = ptr + 1;
+		s1 = s1 + 1;
+	}
+	while (*s2 != '\0')
+	{
+		*ptr = *s2;
+		ptr = ptr + 1;
+		s2 = s2 + 1;
+	}
+	*ptr = '\0';
+	return (saved);
 }

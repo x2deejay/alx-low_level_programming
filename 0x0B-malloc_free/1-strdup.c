@@ -3,30 +3,50 @@
 #include "main.h"
 
 /**
+ * _strlen - returns string length
+ * @s: Input string
+ * Return: len
+ */
+
+int _strlen(char *s)
+{
+	int len;
+
+	len = 0;
+	while (*s != '\0')
+	{
+		len = len + 1;
+		s = s + 1;
+	}
+	return (len);
+}
+
+/**
  * _strdup - returns a pointer to a newly alloted space in
  * memory and contains string given as parameter
  * @str: String parameter
- * Return: returns pointer
+ * Return: saved
  */
 
 char *_strdup(char *str)
 {
+	int len;
 	char *ptr;
-	int i, j, k;
+	char *saved;
 
-	i = 0;
-	while (str[i])
+	len = _strlen(str);
+	ptr = malloc(sizeof(*str) * (len + 1));
+	if (ptr == NULL)
 	{
-		i++;
+		return (NULL);
 	}
-	ptr = malloc(i);
-	k = 0;
-	j = 0;
-	while (j < i)
+	saved = ptr;
+	while (*str != '\0')
 	{
-		*(ptr + j) = *(str + k);
-		j++;
-		k++;
+		*ptr = *str;
+		ptr = ptr + 1;
+		str = str + 1;
 	}
-	return (ptr);
+	*ptr = '\0';
+	return (saved);
 }
