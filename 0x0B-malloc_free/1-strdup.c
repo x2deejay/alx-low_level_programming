@@ -40,6 +40,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 	saved = ptr;
 	while (*str != '\0')
 	{
