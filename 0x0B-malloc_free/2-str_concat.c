@@ -42,7 +42,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (s1 == NULL || s2 == NULL || (s1 == NULL && s2 == NULL))
+	else if (s1 == NULL || s2 == NULL)
+	{
+		return ("");
+	}
+	else if (s1 == NULL && s2 == NULL)
 	{
 		return ("");
 	}
